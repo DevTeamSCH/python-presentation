@@ -11,30 +11,30 @@ import this
 
 <div class="half left">
 	<ol>
-		@size[32px](<li><b>Beautiful is better than ugly.</b></li>)
-		@size[32px](<li><b>Explicit is better than implicit.</b></li>)
-		@size[32px](<li><b>Simple is better than complex.</b></li>)
-		@size[32px](<li><b>Complex is better than complicated.</b></li>)
-		@size[32px](<li>Flat is better than nested.</li>)
-		@size[32px](<li>Sparse is better than dense.</li>)
-		@size[32px](<li><b>Readability counts.</b></li>)
-		@size[32px](<li>Special cases aren't special enough to break the rules.</li>)
-		@size[32px](<li>Although practicality beats purity.</li>)
+		@size[24px](<li><b>Beautiful is better than ugly.</b></li>)
+		@size[24px](<li><b>Explicit is better than implicit.</b></li>)
+		@size[24px](<li><b>Simple is better than complex.</b></li>)
+		@size[24px](<li><b>Complex is better than complicated.</b></li>)
+		@size[24px](<li>Flat is better than nested.</li>)
+		@size[24px](<li>Sparse is better than dense.</li>)
+		@size[24px](<li><b>Readability counts.</b></li>)
+		@size[24px](<li>Special cases aren't special enough to break the rules.</li>)
+		@size[24px](<li>Although practicality beats purity.</li>)
 	</ol>
 </div>
 
 <div class="half right">
 	<ol start="10">
-		@size[32px](<li>Errors should never pass silently.</li>)
-		@size[32px](<li>Unless explicitly silenced.</li>)
-		@size[32px](<li>In the face of ambiguity, refuse the temptation to guess.</li>)
-		@size[32px](<li>There should be one-- and preferably only one --obvious way to do it.</li>)
-		@size[32px](<li>Although that way may not be obvious at first unless you're Dutch.</li>)
-		@size[32px](<li>Now is better than never.</li>)
-		@size[32px](<li>Although never is often better than <i>right</i> now.</li>)
-		@size[32px](<li><b>If the implementation is hard to explain, it's a bad idea.</b></li>)
-		@size[32px](<li><b>If the implementation is easy to explain, it may be a good idea.</b></li>)
-		@size[32px](<li>Namespaces are one honking great idea -- let's do more of those!</li>)
+		@size[24px](<li>Errors should never pass silently.</li>)
+		@size[24px](<li>Unless explicitly silenced.</li>)
+		@size[24px](<li>In the face of ambiguity, refuse the temptation to guess.</li>)
+		@size[24px](<li>There should be one-- and preferably only one --obvious way to do it.</li>)
+		@size[24px](<li>Although that way may not be obvious at first unless you're Dutch.</li>)
+		@size[24px](<li>Now is better than never.</li>)
+		@size[24px](<li>Although never is often better than <i>right</i> now.</li>)
+		@size[24px](<li><b>If the implementation is hard to explain, it's a bad idea.</b></li>)
+		@size[24px](<li><b>If the implementation is easy to explain, it may be a good idea.</b></li>)
+		@size[24px](<li>Namespaces are one honking great idea -- let's do more of those!</li>)
 	</ol>
 </div>
 
