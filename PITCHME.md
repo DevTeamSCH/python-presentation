@@ -6,6 +6,7 @@ import this
 
 ---
 @transition[none]
+@size[24px]
 @snap[north]
 The Zen of Python, by Tim Peters
 @snapend
