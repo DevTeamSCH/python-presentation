@@ -11,5 +11,12 @@
 }
 
 .reveal pre code {
-	max-height: 500px
+	max-height: 500px;
+	margin-right: -25px;
+    margin-left: -25px;
+}
+
+h3#import-this + pre {
+	font-size: 18px;
+    line-height: 1;
 }
