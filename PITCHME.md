@@ -5,7 +5,6 @@ import this
 ```
 
 ---
-@transition[none]
 
 ### The Zen of Python, by Tim Peters
 
@@ -183,6 +182,116 @@ Output:
 
 ### Adatszerkezetek
 
+---
+
+### List
+
+```python
+list = ['a', 'b', 'c', 1, 2, 3]
+list[4] = 22
+for a in list:
+	print(a)
+```
+	
+Output:
+```
+a
+b
+c
+1
+22
+3
+```
+---
+
+### Tuple
+
+```python
+tuple = ('a, 'b', 3)
+item = tuple[2]
+for a in tuple:
+	print(a)
+a, b, c = tuple
+print(c)
+```
+Output:
+```
+a
+b
+3
+3
+```
+---
+
+### Dictionary
+```python3
+dict = {
+	"name": "John Smith",
+	"age": 35
+}
+print(dict)
+print(dict['name'] + " is " + str(dict['age']) + " years old")
+for a in dict:
+	print(a)
+for key, value in dict.items():
+	print(key + ":" + str(value))
+```
+Output:
+```
+{'name': 'John Smith', 'age': 35}
+John Smith is 35 years old
+name
+age
+name:John Smith
+age:35
+```
+
+---
+
+### Set
+```python3
+set = {1, 3, 5}
+print(1 in set)
+print(2 in set)
+set.add(2)
+set.update([4,6])
+for a in set:
+	print(a)
+```
+Output:
+```
+True
+False
+1
+2
+3
+4
+5
+6
+```
+---
+
+### Deque
+```python
+from collections import deque
+deque([1,2,3], 5)
+deque.append(4)
+deque.appendleft(0)
+print(deque)
+deque.extend([5,6,7])
+print(deque)
+print(deque.pop())
+print(deque.popleft())
+print(deque)
+```
+Output:
+```
+deque([0, 1, 2, 3, 4], maxlen=5)
+deque([3, 4, 5, 6, 7], maxlen=5)
+7
+3
+deque([4, 5, 6], maxlen=5)
+```
 ---
 
 ### Csomagkezelés
