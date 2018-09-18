@@ -65,4 +65,41 @@ print("".join([d.get(c, c) for c in s]))
 
 ---
 
-### Basics
+### Alapok
+
+---
+
+### Adatszerkezetek
+
+---
+
+### Csomagkezelés
+
+---
+
+### Szintaktika cukorkak
+
+---
+
+### Csomagok
+
+---
+
+### Objektum orientált python
+
+---
+
+### Dekorátorok
+
+---
+
+### Modulok
+
+---
+
+### Std
+
+---
+
+### Toolok
+
