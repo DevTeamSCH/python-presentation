@@ -24,7 +24,7 @@ import this
 </div>
 
 <div class="half right">
-	<ol>
+	<ol start="10">
 		<li>Errors should never pass silently.</li>
 		<li>Unless explicitly silenced.</li>
 		<li>In the face of ambiguity, refuse the temptation to guess.</li>
