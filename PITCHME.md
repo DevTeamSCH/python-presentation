@@ -120,7 +120,7 @@ for x in a:
 	print(x)
 
 print("-")
-	
+
 for x in range(1, 6, 2): # for (int i = 1; i < 10; i += 2)
 	print(x)
 ```
@@ -165,7 +165,7 @@ def fun(x, mul=False):
 	if mul:
 		return x * 2
 	return x + 2
-	
+
 print(fun(4))
 print(fun(4, True))
 print(fun(4, mul=True))
@@ -192,7 +192,7 @@ list[4] = 22
 for a in list:
 	print(a)
 ```
-	
+
 Output:
 ```
 a
@@ -391,36 +391,108 @@ python_version = "3.7"
 
 ---
 
-### Szintaktika cukorkák
+### Syntax Sugar
 
 ---
 
-### F strings
+### f-string
+
+```python
+name = 'Bill'
+age = 6
+text = f'My name is {name.upper()} and i am {age*10**23} years old.'
+print(text)
+```
+Output:
+```
+My name is BILL and i am 600000000000000000000000 years old.
+```
 
 ---
 
-### Array [2:3]
+### Array [2:4] noob implementation
+```python
+data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+ret = []
+i=2
+while i < 4:
+  ret.append(data[i])
+  i=i+1
+```
+
+---
+
+### Array [2:3] pythonic
+```python
+data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+ret = data[2:4]
+```
 
 ---
 
 ### Yield
+```python
+def my_range(from, to):
+    i = from
+    while i < to:
+        yield i
+```
 
 ---
 
 ### With
+```python
+import json
+
+with open('test.json', 'rt') as fp:
+    data = json.load(fp)
+```
 
 ---
 
 ### Exception handling
-
+```python
+try:
+  my_bad_function()
+except SomethingIsWrong as e:
+  handle_my_problem(e)
+finally:
+  it_must_die()
+```
 ---
 
 ### args, kwargs
 
+```python
+def funny_args(**kwargs, *args):
+    print(kwargs['hello'])
+    print(args[0])
+
+funny_args(hello='Hello', 'World!')
+```
+
+Output:
+```
+Hello
+World!
+```
 ---
 
 ### Async / Await
+```python
+import asyncio
 
+async def main():
+     print('hello')
+     await asyncio.sleep(1)
+     print('world')
+
+asyncio.run(main())
+```
+Output:
+```
+hello
+world
 ---
 
 ### Csomagok
@@ -444,4 +516,3 @@ python_version = "3.7"
 ---
 
 ### Toolok
-
