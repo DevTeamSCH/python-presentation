@@ -509,25 +509,70 @@ new_vector = scale(2.0, [1.0, -4.2, 5.4])
 ```
 
 ---
+### Decorators
 
-### Packages
+```python
+def my_decorator(func):
+    def wrapper():
+        print("Before")
+        func()
+        print("After")
+    return wrapper
+
+@my_decorator
+def hello():
+    print("Hello")
+````
+Output:
+
+```
+Before
+Hello
+After
+```
 
 ---
 
 ### Object Oriented Python
+```python
+class A:
+		b = 'Foo'
+		def __init__(self):
+				self.a = 1
 
+class B(A):
+		def __init__(self, a):
+				self.a = a
+
+		@classmethod
+	  def without(cls):
+	     return cls(5)
+
+		@staticmethod
+		def foo():
+				pass
+
+a = A()
+b = B.without()
+```
 ---
 
-### Decorators
 
----
 
 ### Modules
-
+[https://docs.python.org/3/tutorial/modules.html](https://docs.python.org/3/tutorial/modules.html)
 ---
 
 ### Standard Library
 
+[https://docs.python.org/3/library/](https://docs.python.org/3/library/)
+
 ---
 
 ### Tools
+
+* flake8 / pyflakes
+* pyls
+* pydocstyle
+* pylint
+* ...
