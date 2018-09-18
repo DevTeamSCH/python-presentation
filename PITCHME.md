@@ -5,7 +5,7 @@ import this
 ```
 
 ---
-### The Zen of Python, by Tim Peters
+@title[The Zen of Python, by Tim Peters]
 @snap[west snap-50]
 1. **Beautiful is better than ugly.**
 1. **Explicit is better than implicit.**
