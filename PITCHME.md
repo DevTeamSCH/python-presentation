@@ -121,7 +121,7 @@ for x in a:
 
 print("-")
 
-for x in range(1, 6, 2): # for (int i = 1; i < 10; i += 2)
+for x in range(1, 6, 2): # for (int i = 1; i < 6; i += 2)
 	print(x)
 ```
 
@@ -313,7 +313,7 @@ import requests
 
 ```
 python -m venv ~/virtualenvs/test
-sorurce ~/virtualenvs/test/bin/activate
+source ~/virtualenvs/test/bin/activate
 ```
 - Virtualenvwrapper
 - Saját környezet minden projekthez
@@ -401,7 +401,7 @@ python_version = "3.7"
 ```python
 name = 'Bill'
 age = 6
-text = f'My name is {name.upper()} and i am {age*10**23} years old.'
+text = f'My name is {name.upper()} and I'm {age*10**23} years old.'
 print(text)
 ```
 
