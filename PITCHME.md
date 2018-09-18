@@ -69,6 +69,111 @@ print("".join([d.get(c, c) for c in s]))
 
 ---
 
+### Változók
+
+```python
+a = 2
+b = 3.2
+d = 2+4j
+x = False
+str = "string"
+str2 = str * 2
+str3 = str2 + "abc"
+```
+
+- number (integer, floating point, complex)
+- boolean
+- string
+- list, tuple, dictionary
+
+---
+
+### Vezérlési szerkezetek
+
+```python
+b = False
+x = 3
+if not b and x <= 6:
+	print("Hello")
+```
+
+Output:
+```
+Hello
+```
+
+---
+
+### Vezérlési szerkezetek
+
+```python
+a = [1, 2, 3]
+for x in a:
+	print(x)
+
+print("---")
+	
+for x in range(1, 10, 2): # for (int i = 1; i < 10; i += 2)
+	print(x)
+```
+
+Output:
+```
+1
+2
+3
+---
+1
+3
+5
+7
+9
+```
+
+---
+
+### Vezérlési szerkezetek
+
+```python
+i = 1
+while i < 6:
+	print(i)
+	i += 1
+```
+
+Output:
+```
+1
+2
+3
+4
+5
+```
+
+---
+
+### Függvények
+
+```python
+def fun(x, mul=False):
+	if mul:
+		return x * 2
+	return x + 2
+	
+print(fun(4))
+print(fun(4, True))
+print(fun(4, mul=True))
+```
+
+Output:
+```
+6
+8
+8
+```
+
+---
+
 ### Adatszerkezetek
 
 ---
