@@ -365,6 +365,8 @@ pipenv install requests
 pipenv install pytest --dev
 pipenv lock
 pipenv sync [--dev]
+pipenv run ./script.py
+pipenv shell
 ```
 
 ---
