@@ -365,6 +365,7 @@ pipenv install pytest --dev
 pipenv lock
 pipenv sync [--dev]
 ```
+
 ```
 [[source]]
 url = "https://pypi.org/simple"
@@ -372,15 +373,10 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django-bootstrap4 = "*"
-django-markdownx = "*"
-pytz = "*"
-django-search-views = "*"
-Django = "*"
-django-registration = "*"
+requests = "*"
 
 [dev-packages]
-django-debug-toolbar = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.7"
