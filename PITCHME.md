@@ -312,7 +312,8 @@ import requests
 ### Virtualenv
 
 ```
-pip install virtualenv
+python -m venv ~/virtualenvs/test
+sorurce ~/virtualenvs/test/bin/activate
 ```
 - Virtualenvwrapper
 - Saját környezet minden projekthez
@@ -391,31 +392,139 @@ python_version = "3.7"
 
 ---
 
-### Szintaktika cukorkák
+### Syntactic Sugar
 
 ---
 
-### F strings
+### f-stringí
+```python
+name = 'Bill'
+age = 6
+text = f'My name is {name.upper()} and i am {age*10**23} years old.'
+print(text)
+```
+
+Output:
+```
+My name is BILL and i am 600000000000000000000000 years old.
+```
+
+---
+### Slice array
+```python
+data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+ret = []
+i=2
+while i < 4:
+  ret.append(data[i])
+  i=i+1
+```
 
 ---
 
-### Array [2:3]
+### Slice array
+
+```python
+data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+ret = data[2:4]
+```
+
+---
+
+### List comprehension
+
+```python
+list = []
+for i in range(1, 11):
+	if i % 2 == 0:
+		list.append(i*i)
+
+list = [i*i for i in range(11) if i % 2 == 0]
+
+print(list)
+```
+
+Output:
+```
+[0, 4, 16, 36, 64, 100]
+```
 
 ---
 
 ### Yield
 
+```python
+def fun():
+	for i in range(6):
+		yield i*i
+
+gen = (i*i for i in range(11) if i % 2 == 0)
+gen2 = fun()
+for i in gen2:
+	print(i)
+```
+Output:
+```
+0
+1
+4
+9
+16
+25
+```
+
 ---
 
 ### With
+
+```
+file = open('file.txt', 'w')
+data = json.load(file)
+file.close()
+
+with open('test.json', 'rt') as fp:
+    data = json.load(fp)
+```
 
 ---
 
 ### Exception handling
 
+```python
+file = None
+try:
+	file = open('output.txt', 'r')
+	data = file.read()
+	if data == "error":
+		raise Exception("File contains error")
+except FileNotFoundError as e:
+	print("File not found")
+except Exception as e:
+	print(e)
+except:
+	print("Some other error occurred")
+else:
+	print("Completed with no errors")
+finally:
+	if file is not None:
+		file.close()
+```
+
 ---
 
 ### args, kwargs
+```python
+def funny_args(a, *args, **kwargs):
+	print(kwargs['hello'])
+	print(args[0])
+	
+funny_args(1, 'World!', hello='Hello')
+```
+ Output:
+```
+Hello
+World!
+```
 
 ---
 
