@@ -9,7 +9,6 @@ import this
 
 ### The Zen of Python, by Tim Peters
 
-@size[32px]()
 <div class="half left">
 	<ol>
 		@size[32px](<li><b>Beautiful is better than ugly.</b></li>)
