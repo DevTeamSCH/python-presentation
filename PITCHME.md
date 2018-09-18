@@ -22,12 +22,12 @@ import this
 		@size[24px](<li>Although practicality beats purity.</li>)
 		@size[24px](<li>Errors should never pass silently.</li>)
 		@size[24px](<li>Unless explicitly silenced.</li>)
+		@size[24px](<li>In the face of ambiguity, refuse the temptation to guess.</li>)
 	</ol>
 </div>
 
 <div class="half right">
-	<ol start="12">
-		@size[24px](<li>In the face of ambiguity, refuse the temptation to guess.</li>)
+	<ol start="13">
 		@size[24px](<li>There should be one-- and preferably only one --obvious way to do it.</li>)
 		@size[24px](<li>Although that way may not be obvious at first unless you're Dutch.</li>)
 		@size[24px](<li>Now is better than never.</li>)
