@@ -453,8 +453,8 @@ Output:
 ### Yield
 ```python
 def fun():
-  for i in range(6):
-  yield i*i
+    for i in range(6):
+        yield i*i
 
 gen = (i*i for i in range(11) if i % 2 == 0)
 gen2 = fun()
@@ -567,9 +567,10 @@ new_vector = scale(2.0, [1.0, -4.2, 5.4])
 ```python
 def my_decorator(func):
     def wrapper():
-        print("Before")
-        func()
-        print("After")
+       print("Before")
+       func()
+       print("After")
+
     return wrapper
 
 @my_decorator
@@ -594,16 +595,16 @@ class A:
     self.a = 1
 
 class B(A):
-  def __init__(self, a):
-  self.a = a
+    def __init__(self, a):
+        self.a = a
 
-  @classmethod
-  def without(cls):
-    return cls(5)
+     @classmethod
+     def without(cls):
+         return cls(5)
 
-  @staticmethod
-  def foo():
-    pass
+     @staticmethod
+     def foo():
+        pass
 
 a = A()
 b = B.without()
