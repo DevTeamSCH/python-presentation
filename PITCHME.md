@@ -7,11 +7,8 @@ import this
 ---
 @transition[none]
 
-@snap[north]
-The Zen of Python, by Tim Peters
-@snapend
+### The Zen of Python, by Tim Peters
 
-@snap[south]
 <div class="half left">
 	<ol>
 		<li><b>Beautiful is better than ugly.</b></li>
@@ -40,7 +37,7 @@ The Zen of Python, by Tim Peters
 		<li>Namespaces are one honking great idea -- let's do more of those!</li>
 	</ol>
 </div>
-@snapend
+
 ---
 
 ### import this
