@@ -121,7 +121,7 @@ for x in a:
 
 print("-")
 
-for x in range(1, 6, 2): # for (int i = 1; i < 10; i += 2)
+for x in range(1, 6, 2): # for (int i = 1; i < 6; i += 2)
 	print(x)
 ```
 
@@ -312,7 +312,8 @@ import requests
 ### Virtualenv
 
 ```
-pip install virtualenv
+python -m venv ~/virtualenvs/test
+source ~/virtualenvs/test/bin/activate
 ```
 - Virtualenvwrapper
 - Saját környezet minden projekthez
@@ -391,7 +392,7 @@ python_version = "3.7"
 
 ---
 
-### Syntax Sugar
+### Syntactic Sugar
 
 ---
 
@@ -400,9 +401,10 @@ python_version = "3.7"
 ```python
 name = 'Bill'
 age = 6
-text = f'My name is {name.upper()} and i am {age*10**23} years old.'
+text = f'My name is {name.upper()} and I'm {age*10**23} years old.'
 print(text)
 ```
+
 Output:
 ```
 My name is BILL and i am 600000000000000000000000 years old.
@@ -410,7 +412,8 @@ My name is BILL and i am 600000000000000000000000 years old.
 
 ---
 
-### Array [2:4] noob implementation
+### Slice array
+
 ```python
 data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ret = []
@@ -420,9 +423,6 @@ while i < 4:
   i=i+1
 ```
 
----
-
-### Array [2:4] pythonic
 ```python
 data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ret = data[2:4]
@@ -430,12 +430,45 @@ ret = data[2:4]
 
 ---
 
+### List comprehension
+
+```python
+list = []
+for i in range(1, 11):
+	if i % 2 == 0:
+		list.append(i*i)
+
+list = [i*i for i in range(11) if i % 2 == 0]
+
+print(list)
+```
+
+Output:
+```
+[0, 4, 16, 36, 64, 100]
+```
+
+---
+
 ### Yield
 ```python
-def my_range(from, to):
-    i = from
-    while i < to:
-        yield i
+def fun():
+	for i in range(6):
+		yield i*i
+
+gen = (i*i for i in range(11) if i % 2 == 0)
+gen2 = fun()
+for i in gen2:
+	print(i)
+```
+Output:
+```
+0
+1
+4
+9
+16
+25
 ```
 
 ---
@@ -448,30 +481,50 @@ with open('test.json', 'rt') as fp:
     data = json.load(fp)
 ```
 
+```
+file = open('file.txt', 'w')
+data = json.load(file)
+file.close()
+
+with open('test.json', 'rt') as fp:
+    data = json.load(fp)
+```
+
 ---
 
 ### Exception handling
+
 ```python
+file = None
 try:
-  my_bad_function()
-except SomethingIsWrong as e:
-  handle_my_problem(e)
+	file = open('output.txt', 'r')
+	data = file.read()
+	if data == "error":
+		raise Exception("File contains error")
+except FileNotFoundError as e:
+	print("File not found")
+except Exception as e:
+	print(e)
+except:
+	print("Some other error occurred")
+else:
+	print("Completed with no errors")
 finally:
-  it_must_die()
+	if file is not None:
+		file.close()
 ```
+
 ---
 
 ### args, kwargs
-
 ```python
-def funny_args(**kwargs, *args):
-    print(kwargs['hello'])
-    print(args[0])
-
-funny_args(hello='Hello', 'World!')
+def funny_args(a, *args, **kwargs):
+	print(kwargs['hello'])
+	print(args[0])
+	
+funny_args(1, 'World!', hello='Hello')
 ```
-
-Output:
+ Output:
 ```
 Hello
 World!
