@@ -102,7 +102,7 @@ str3 = str2 + "abc"
 b = False
 x = 3
 if not b and x <= 6:
-  print("Hello")
+    print("Hello")
 ```
 
 Output:
@@ -117,12 +117,12 @@ Hello
 ```python
 a = [1, 2, 3]
 for x in a:
-  print(x)
+    print(x)
 
 print("-")
 
 for x in range(1, 6, 2): # for (int i = 1; i < 6; i += 2)
-  print(x)
+    print(x)
 ```
 
 Output:
@@ -143,8 +143,8 @@ Output:
 ```python
 i = 1
 while i < 6:
-  print(i)
-  i += 1
+    print(i)
+    i += 1
 ```
 
 Output:
@@ -162,9 +162,9 @@ Output:
 
 ```python
 def fun(x, mul=False):
-  if mul:
-  return x * 2
-  return x + 2
+    if mul:
+        return x * 2
+        return x + 2
 
 print(fun(4))
 print(fun(4, True))
@@ -190,7 +190,7 @@ Output:
 list = ['a', 'b', 'c', 1, 2, 3]
 list[4] = 22
 for a in list:
-  print(a)
+    print(a)
 ```
 
 Output:
@@ -210,7 +210,7 @@ c
 tuple = ('a', 'b', 3)
 item = tuple[2]
 for a in tuple:
-  print(a)
+    print(a)
 a, b, c = tuple
 print(c)
 ```
@@ -232,9 +232,9 @@ dict = {
 print(dict)
 print(dict['name'] + " is " + str(dict['age']) + " years old")
 for a in dict:
-  print(a)
+    print(a)
 for key, value in dict.items():
-  print(key + ":" + str(value))
+    print(key + ":" + str(value))
 ```
 Output:
 ```
@@ -256,7 +256,7 @@ print(2 in set)
 set.add(2)
 set.update([4,6])
 for a in set:
-  print(a)
+    print(a)
 ```
 Output:
 ```
@@ -419,8 +419,8 @@ data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ret = []
 i=2
 while i < 4:
-  ret.append(data[i])
-  i=i+1
+    ret.append(data[i])
+    i=i+1
 ```
 
 ```python
@@ -435,8 +435,8 @@ ret = data[2:4]
 ```python
 list = []
 for i in range(1, 11):
-  if i % 2 == 0:
-  list.append(i*i)
+    if i % 2 == 0:
+        list.append(i*i)
 
 list = [i*i for i in range(11) if i % 2 == 0]
 
@@ -459,7 +459,7 @@ def fun():
 gen = (i*i for i in range(11) if i % 2 == 0)
 gen2 = fun()
 for i in gen2:
-  print(i)
+    print(i)
 ```
 Output:
 ```
@@ -497,21 +497,21 @@ with open('test.json', 'rt') as fp:
 ```python
 file = None
 try:
-  file = open('output.txt', 'r')
-  data = file.read()
-  if data == "error":
-  raise Exception("File contains error")
+    file = open('output.txt', 'r')
+    data = file.read()
+    if data == "error":
+        raise Exception("File contains error")
 except FileNotFoundError as e:
-  print("File not found")
+    print("File not found")
 except Exception as e:
-  print(e)
+    print(e)
 except:
-  print("Some other error occurred")
+    print("Some other error occurred")
 else:
-  print("Completed with no errors")
+    print("Completed with no errors")
 finally:
-  if file is not None:
-  file.close()
+    if file is not None:
+        file.close()
 ```
 
 ---
@@ -519,8 +519,8 @@ finally:
 ### args, kwargs
 ```python
 def funny_args(a, *args, **kwargs):
-  print(kwargs['hello'])
-  print(args[0])
+    print(kwargs['hello'])
+    print(args[0])
 
 funny_args(1, 'World!', hello='Hello')
 ```
@@ -591,19 +591,19 @@ After
 class A:
   b = 'Foo'
   def __init__(self):
-  self.a = 1
+    self.a = 1
 
 class B(A):
   def __init__(self, a):
   self.a = a
 
   @classmethod
-    def without(cls):
-       return cls(5)
+  def without(cls):
+    return cls(5)
 
   @staticmethod
   def foo():
-  pass
+    pass
 
 a = A()
 b = B.without()
