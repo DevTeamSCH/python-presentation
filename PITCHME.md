@@ -422,7 +422,7 @@ while i < 4:
 
 ---
 
-### Array [2:3] pythonic
+### Array [2:4] pythonic
 ```python
 data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ret = data[2:4]
@@ -493,6 +493,7 @@ Output:
 ```
 hello
 world
+```
 ---
 
 ### Csomagok
