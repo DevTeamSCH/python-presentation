@@ -9,11 +9,11 @@ import this
 
 ### The Zen of Python, by Tim Peters
 
-@size[32px](
+@size[32px]()
 <div class="half left">
 	<ol>
-		<li><b>Beautiful is better than ugly.</b></li>
-		<li><b>Explicit is better than implicit.</b></li>
+		@size[32px](<li><b>Beautiful is better than ugly.</b></li>)
+		@size[32px](<li><b>Explicit is better than implicit.</b></li>)
 		<li><b>Simple is better than complex.</b></li>
 		<li><b>Complex is better than complicated.</b></li>
 		<li>Flat is better than nested.</li>
@@ -38,7 +38,7 @@ import this
 		<li>Namespaces are one honking great idea -- let's do more of those!</li>
 	</ol>
 </div>
-)
+
 ---
 
 ### import this
