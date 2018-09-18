@@ -73,11 +73,11 @@ print("".join([d.get(c, c) for c in s]))
 
 ---
 
-### Alapok
+### Basics
 
 ---
 
-### Változók
+### Variables
 
 ```python
 a = 2
@@ -96,7 +96,7 @@ str3 = str2 + "abc"
 
 ---
 
-### Vezérlési szerkezetek
+### If
 
 ```python
 b = False
@@ -112,7 +112,7 @@ Hello
 
 ---
 
-### Vezérlési szerkezetek
+### For(each)
 
 ```python
 a = [1, 2, 3]
@@ -138,7 +138,7 @@ Output:
 
 ---
 
-### Vezérlési szerkezetek
+### While
 
 ```python
 i = 1
@@ -158,7 +158,7 @@ Output:
 
 ---
 
-### Függvények
+### Functions
 
 ```python
 def fun(x, mul=False):
@@ -180,7 +180,7 @@ Output:
 
 ---
 
-### Adatszerkezetek
+### Data Structures
 
 ---
 
@@ -294,7 +294,7 @@ deque([4, 5, 6], maxlen=5)
 ```
 ---
 
-### Csomagkezelés
+### Package Managemenet
 
 ---
 
@@ -496,24 +496,38 @@ world
 ```
 ---
 
-### Csomagok
+### Type Hints
+
+```python
+from typing import List
+Vector = List[float]
+
+def scale(scalar: float, vector: Vector) -> Vector:
+    return [scalar * num for num in vector]
+
+new_vector = scale(2.0, [1.0, -4.2, 5.4])
+```
 
 ---
 
-### Objektum orientált python
+### Packages
 
 ---
 
-### Dekorátorok
+### Object Oriented Python
 
 ---
 
-### Modulok
+### Decorators
 
 ---
 
-### Std
+### Modules
 
 ---
 
-### Toolok
+### Standard Library
+
+---
+
+### Tools
