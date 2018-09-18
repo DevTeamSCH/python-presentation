@@ -5,7 +5,10 @@ import this
 ```
 
 ---
-### The Zen of Python, by Tim Peters
+@transition[none]
+@snap[north]
+The Zen of Python, by Tim Peters
+@snapend
 
 @snap[west]
 <ol>
