@@ -11,7 +11,7 @@ import this
 The Zen of Python, by Tim Peters
 @snapend
 
-@snap[west]
+@snap[south]
 <div class="half left">
 	<ol>
 		<li><b>Beautiful is better than ugly.</b></li>
@@ -25,8 +25,7 @@ The Zen of Python, by Tim Peters
 		<li>Although practicality beats purity.</li>
 	</ol>
 </div>
-@snapend
-@snap[east]
+
 <div class="half">
 	<ol>
 		<li>Errors should never pass silently.</li>
