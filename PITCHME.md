@@ -391,7 +391,35 @@ python_version = "3.7"
 
 ---
 
-### Szintaktika cukorkak
+### Szintaktika cukorkák
+
+---
+
+### F strings
+
+---
+
+### Array [2:3]
+
+---
+
+### Yield
+
+---
+
+### With
+
+---
+
+### Exception handling
+
+---
+
+### args, kwargs
+
+---
+
+### Async / Await
 
 ---
 
