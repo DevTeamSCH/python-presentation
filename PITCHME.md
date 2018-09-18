@@ -5,8 +5,8 @@ import this
 ```
 
 ---
-@title[The Zen of Python, by Tim Peters]
-@snap[west]
+### The Zen of Python, by Tim Peters]
+
 1. **Beautiful is better than ugly.**
 1. **Explicit is better than implicit.**
 1. **Simple is better than complex.**
@@ -17,8 +17,6 @@ import this
 1. Special cases aren't special enough to break the rules.
 1. Although practicality beats purity.
 1. Errors should never pass silently.
-@snapend
-@snap[east]
 1. Unless explicitly silenced.
 1. In the face of ambiguity, refuse the temptation to guess.
 1. There should be one-- and preferably only one --obvious way to do it.
@@ -28,7 +26,6 @@ import this
 1. **If the implementation is hard to explain, it's a bad idea.**
 1. **If the implementation is easy to explain, it may be a good idea.**
 1. Namespaces are one honking great idea -- let's do more of those!
-@snapend
 ---
 
 ### import this
@@ -113,7 +110,7 @@ for x in a:
 
 print("-")
 	
-for x in range(1, 10, 2): # for (int i = 1; i < 10; i += 2)
+for x in range(1, 6, 2): # for (int i = 1; i < 10; i += 2)
 	print(x)
 ```
 
@@ -126,8 +123,6 @@ Output:
 1
 3
 5
-7
-9
 ```
 
 ---
