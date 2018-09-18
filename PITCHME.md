@@ -6,7 +6,7 @@ import this
 
 ---
 @title[The Zen of Python, by Tim Peters]
-@snap[west span-50]
+@snap[west]
 1. **Beautiful is better than ugly.**
 1. **Explicit is better than implicit.**
 1. **Simple is better than complex.**
@@ -18,7 +18,7 @@ import this
 1. Although practicality beats purity.
 1. Errors should never pass silently.
 @snapend
-@snap[east span-50]
+@snap[east]
 1. Unless explicitly silenced.
 1. In the face of ambiguity, refuse the temptation to guess.
 1. There should be one-- and preferably only one --obvious way to do it.
@@ -111,7 +111,7 @@ a = [1, 2, 3]
 for x in a:
 	print(x)
 
-print("---")
+print("-")
 	
 for x in range(1, 10, 2): # for (int i = 1; i < 10; i += 2)
 	print(x)
@@ -122,7 +122,7 @@ Output:
 1
 2
 3
----
+-
 1
 3
 5
