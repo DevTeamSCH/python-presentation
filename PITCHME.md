@@ -423,10 +423,6 @@ while i < 4:
   i=i+1
 ```
 
----
-
-### Slice array
-
 ```python
 data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ret = data[2:4]
@@ -455,13 +451,6 @@ Output:
 ---
 
 ### Yield
-```python
-def my_range(from, to):
-    i = from
-    while i < to:
-        yield i
-```
-
 ```python
 def fun():
 	for i in range(6):
@@ -536,20 +525,6 @@ def funny_args(a, *args, **kwargs):
 funny_args(1, 'World!', hello='Hello')
 ```
  Output:
-```
-Hello
-World!
-```
-
-```python
-def funny_args(**kwargs, *args):
-    print(kwargs['hello'])
-    print(args[0])
-
-funny_args(hello='Hello', 'World!')
-```
-
-Output:
 ```
 Hello
 World!

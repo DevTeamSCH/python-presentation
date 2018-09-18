@@ -9,3 +9,7 @@
 .right {
 	float: right;
 }
+
+.reveal pre code {
+	max-height: 500px
+}
