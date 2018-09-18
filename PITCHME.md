@@ -6,37 +6,41 @@ import this
 
 ---
 @transition[none]
-@size[24px]
+
 @snap[north]
 The Zen of Python, by Tim Peters
 @snapend
 
 @snap[west]
-<ol>
-<li><b>Beautiful is better than ugly.</b></li>
-<li><b>Explicit is better than implicit.</b></li>
-<li><b>Simple is better than complex.</b></li>
-<li><b>Complex is better than complicated.</b></li>
-<li>Flat is better than nested.</li>
-<li>Sparse is better than dense.</li>
-<li><b>Readability counts.</b></li>
-<li>Special cases aren't special enough to break the rules.</li>
-<li>Although practicality beats purity.</li>
-</ol>
+<div class="half">
+	<ol>
+		<li><b>Beautiful is better than ugly.</b></li>
+		<li><b>Explicit is better than implicit.</b></li>
+		<li><b>Simple is better than complex.</b></li>
+		<li><b>Complex is better than complicated.</b></li>
+		<li>Flat is better than nested.</li>
+		<li>Sparse is better than dense.</li>
+		<li><b>Readability counts.</b></li>
+		<li>Special cases aren't special enough to break the rules.</li>
+		<li>Although practicality beats purity.</li>
+	</ol>
+</div>
 @snapend
 @snap[east]
-<ol>
-<li>Errors should never pass silently.</li>
-<li>Unless explicitly silenced.</li>
-<li>In the face of ambiguity, refuse the temptation to guess.</li>
-<li>There should be one-- and preferably only one --obvious way to do it.</li>
-<li>Although that way may not be obvious at first unless you're Dutch.</li>
-<li>Now is better than never.</li>
-<li>Although never is often better than <i>right</i> now.</li>
-<li><b>If the implementation is hard to explain, it's a bad idea.</b></li>
-<li><b>If the implementation is easy to explain, it may be a good idea.</b></li>
-<li>Namespaces are one honking great idea -- let's do more of those!</li>
-</ol>
+<div class="half">
+	<ol>
+		<li>Errors should never pass silently.</li>
+		<li>Unless explicitly silenced.</li>
+		<li>In the face of ambiguity, refuse the temptation to guess.</li>
+		<li>There should be one-- and preferably only one --obvious way to do it.</li>
+		<li>Although that way may not be obvious at first unless you're Dutch.</li>
+		<li>Now is better than never.</li>
+		<li>Although never is often better than <i>right</i> now.</li>
+		<li><b>If the implementation is hard to explain, it's a bad idea.</b></li>
+		<li><b>If the implementation is easy to explain, it may be a good idea.</b></li>
+		<li>Namespaces are one honking great idea -- let's do more of those!</li>
+	</ol>
+</div>
 @snapend
 ---
 
