@@ -9,6 +9,7 @@ import this
 
 ### The Zen of Python, by Tim Peters
 
+@size[32px](
 <div class="half left">
 	<ol>
 		<li><b>Beautiful is better than ugly.</b></li>
@@ -37,7 +38,7 @@ import this
 		<li>Namespaces are one honking great idea -- let's do more of those!</li>
 	</ol>
 </div>
-
+)
 ---
 
 ### import this
