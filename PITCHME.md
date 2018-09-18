@@ -352,12 +352,13 @@ requests
 - requirements.in -> requirements.txt (pip-compile)
 - pip-compile --upgrade
 - pip-sync
-
+- Külön development és production dependeciák kezelése
 ---
 
 ### pipenv
 
 - pip + virtualenv
+
 ```
 pip install pipenv
 pipenv install requests
@@ -365,7 +366,11 @@ pipenv install pytest --dev
 pipenv lock
 pipenv sync [--dev]
 ```
+
 ---
+
+### Pipfile
+
 ```
 [[source]]
 url = "https://pypi.org/simple"
