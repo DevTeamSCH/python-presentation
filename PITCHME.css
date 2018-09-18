@@ -1,3 +1,11 @@
 .half {
 	width: 49%
 }
+
+.left {
+	float: left
+}
+
+.right {
+	float: right
+}

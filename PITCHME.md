@@ -11,8 +11,7 @@ import this
 The Zen of Python, by Tim Peters
 @snapend
 
-@snap[west]
-<div class="half">
+<div class="half left">
 	<ol>
 		<li><b>Beautiful is better than ugly.</b></li>
 		<li><b>Explicit is better than implicit.</b></li>
@@ -25,9 +24,8 @@ The Zen of Python, by Tim Peters
 		<li>Although practicality beats purity.</li>
 	</ol>
 </div>
-@snapend
-@snap[east]
-<div class="half">
+
+<div class="half right">
 	<ol>
 		<li>Errors should never pass silently.</li>
 		<li>Unless explicitly silenced.</li>
@@ -41,7 +39,6 @@ The Zen of Python, by Tim Peters
 		<li>Namespaces are one honking great idea -- let's do more of those!</li>
 	</ol>
 </div>
-@snapend
 ---
 
 ### import this
