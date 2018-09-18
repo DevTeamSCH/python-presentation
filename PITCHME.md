@@ -5,27 +5,35 @@ import this
 ```
 
 ---
-### The Zen of Python, by Tim Peters]
+### The Zen of Python, by Tim Peters
 
-1. **Beautiful is better than ugly.**
-1. **Explicit is better than implicit.**
-1. **Simple is better than complex.**
-1. **Complex is better than complicated.**
-1. Flat is better than nested.
-1. Sparse is better than dense.
-1. **Readability counts.**
-1. Special cases aren't special enough to break the rules.
-1. Although practicality beats purity.
-1. Errors should never pass silently.
-1. Unless explicitly silenced.
-1. In the face of ambiguity, refuse the temptation to guess.
-1. There should be one-- and preferably only one --obvious way to do it.
-1. Although that way may not be obvious at first unless you're Dutch.
-1. Now is better than never.
-1. Although never is often better than *right* now.
-1. **If the implementation is hard to explain, it's a bad idea.**
-1. **If the implementation is easy to explain, it may be a good idea.**
-1. Namespaces are one honking great idea -- let's do more of those!
+@snap[west]
+<ol>
+<li><b>Beautiful is better than ugly.</b></li>
+<li><b>Explicit is better than implicit.</b></li>
+<li><b>Simple is better than complex.</b></li>
+<li><b>Complex is better than complicated.</b></li>
+<li>Flat is better than nested.</li>
+<li>Sparse is better than dense.</li>
+<li><b>Readability counts.</b></li>
+<li>Special cases aren't special enough to break the rules.</li>
+<li>Although practicality beats purity.</li>
+</ol>
+@snapend
+@snap[east]
+<ol>
+<li>Errors should never pass silently.</li>
+<li>Unless explicitly silenced.</li>
+<li>In the face of ambiguity, refuse the temptation to guess.</li>
+<li>There should be one-- and preferably only one --obvious way to do it.</li>
+<li>Although that way may not be obvious at first unless you're Dutch.</li>
+<li>Now is better than never.</li>
+<li>Although never is often better than <i>right</i> now.</li>
+<li><b>If the implementation is hard to explain, it's a bad idea.</b></li>
+<li><b>If the implementation is easy to explain, it may be a good idea.</b></li>
+<li>Namespaces are one honking great idea -- let's do more of those!</li>
+</ol>
+@snapend
 ---
 
 ### import this
