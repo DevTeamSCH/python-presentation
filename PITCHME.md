@@ -6,7 +6,7 @@ import this
 
 ---
 @title[The Zen of Python, by Tim Peters]
-@snap[west snap-50]
+@snap[west span-50]
 1. **Beautiful is better than ugly.**
 1. **Explicit is better than implicit.**
 1. **Simple is better than complex.**
@@ -18,7 +18,7 @@ import this
 1. Although practicality beats purity.
 1. Errors should never pass silently.
 @snapend
-@snap[east snap-50]
+@snap[east span-50]
 1. Unless explicitly silenced.
 1. In the face of ambiguity, refuse the temptation to guess.
 1. There should be one-- and preferably only one --obvious way to do it.
