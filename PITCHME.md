@@ -92,7 +92,7 @@ str3 = str2 + "abc"
 - number (integer, floating point, complex)
 - boolean
 - string
-- list, tuple, dictionary
+- list, tuple, dictionary, ...
 
 ---
 
@@ -207,7 +207,7 @@ c
 ### Tuple
 
 ```python
-tuple = ('a, 'b', 3)
+tuple = ('a', 'b', 3)
 item = tuple[2]
 for a in tuple:
 	print(a)
@@ -224,7 +224,7 @@ b
 ---
 
 ### Dictionary
-```python3
+```python
 dict = {
 	"name": "John Smith",
 	"age": 35
@@ -249,7 +249,7 @@ age:35
 ---
 
 ### Set
-```python3
+```python
 set = {1, 3, 5}
 print(1 in set)
 print(2 in set)
