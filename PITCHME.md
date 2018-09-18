@@ -4,6 +4,7 @@
 import this
 ```
 
+---
 ### The Zen of Python, by Tim Peters
 
 1. **Beautiful is better than ugly.**
@@ -62,4 +63,4 @@ print("".join([d.get(c, c) for c in s]))
 
 ---
 
-# Basics
+### Basics
