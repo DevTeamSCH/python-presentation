@@ -298,6 +298,96 @@ deque([4, 5, 6], maxlen=5)
 
 ---
 
+### Pip
+
+```
+pip install requests
+```
+```
+import requests
+...
+```
+
+---
+### Virtualenv
+
+```
+pip install virtualenv
+```
+- Virtualenvwrapper
+- Saját környezet minden projekthez
+
+```
+mkvirtualenv test
+workon test
+pip install requests
+deactivate
+rmvirtualenv test
+```
+
+---
+
+### requirements.txt
+
+```
+certifi==2018.8.24
+chardet==3.0.4
+idna==2.7
+pkg-resources==0.0.0
+requests==2.19.1
+urllib3==1.23
+```
+```
+pip install -r requirements.txt
+pip freeze
+```
+
+---
+
+### pip-tools
+
+```
+requests
+```
+- requirements.in -> requirements.txt (pip-compile)
+- pip-compile --upgrade
+- pip-sync
+
+---
+
+### pipenv
+
+- pip + virtualenv
+```
+pip install pipenv
+pipenv install requests
+pipenv install pytest --dev
+pipenv lock
+pipenv sync [--dev]
+```
+```
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django-bootstrap4 = "*"
+django-markdownx = "*"
+pytz = "*"
+django-search-views = "*"
+Django = "*"
+django-registration = "*"
+
+[dev-packages]
+django-debug-toolbar = "*"
+
+[requires]
+python_version = "3.7"
+```
+
+---
+
 ### Szintaktika cukorkak
 
 ---
