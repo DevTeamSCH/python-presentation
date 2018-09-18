@@ -26,7 +26,7 @@ The Zen of Python, by Tim Peters
 	</ol>
 </div>
 
-<div class="half">
+<div class="half right">
 	<ol>
 		<li>Errors should never pass silently.</li>
 		<li>Unless explicitly silenced.</li>
